@@ -12,7 +12,7 @@ jobs:
         with:
           working_directory: assets
           root_file: asset.tex
-      - uses: MrFlynn/upload-to-netlify-action@v1
+      - uses: MrFlynn/upload-to-netlify-action@v2
         with:
           source-file: "assets/asset.pdf"
           destination-path: "/asset.pdf"
