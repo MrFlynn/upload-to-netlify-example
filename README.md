@@ -5,6 +5,6 @@
 This repository demonstrates the usage of the
 [upload-to-netlify-action](https://github.com/MrFlynn/upload-to-netlify-action)
 for Github Actions. Every time a commit is made to master, the LaTeX document in
-`assets/doc.tex` is compiled and uploaded to the Netlify site at the relative
-URL of `/doc.pdf`.
+[`assets/asset.tex`](assets/asset.tex) is compiled and uploaded to the Netlify site at the relative
+URL of `/asset.pdf`.
 See the live site [here](https://upload-to-netlify-example.netlify.com).
