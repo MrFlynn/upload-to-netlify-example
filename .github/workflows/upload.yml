@@ -7,14 +7,15 @@ jobs:
     name: Compile and upload LaTeX document to Netlify.
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: xu-cheng/latex-action@v2
         with:
           working_directory: assets
           root_file: asset.tex
-      - uses: MrFlynn/upload-to-netlify-action@v2
+      - uses: MrFlynn/upload-to-netlify-action@v3
         with:
           source-file: "assets/asset.pdf"
           destination-path: "/asset.pdf"
           site-name: upload-to-netlify-example
+          branch-name: master
           netlify-token: ${{ secrets.NETLIFY_TOKEN }}
